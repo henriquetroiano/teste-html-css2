@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/* default variables */
+:root {
+  --special-blue: rgb(59, 59, 141);
+}
+
+/* reset CSS */
+* {
+  font-family: Roboto, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* setting rem to 10px */
+html {
+  font-size: 10px;
+}
+
+/* main styles */
+main {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(211, 211, 211);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main > h1 {
+  font-size: 2.8em;
+  margin: 25px 0;
+  color: var(--special-blue);
+}
+
+/* container styles */
+div.container {
+  /* border: 1px solid black; */
+  width: max-content;
+  display: flex;
+}
+
+/* anchor styles - some anchor styles at the bottom will affect the other items inside it! */
+div.container > a {
+  border: 1px solid var(--special-blue);
+  text-decoration: none;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+}
+
+/* when a anchor isn't the last */
+div.container > a + a {
+  margin-left: 10px;
+}
+
+/* img size limitation */
+div.container > a > img {
+  width: 150px;
+  height: 150px;
+}
+
+/* paragraph styles */
+div.container > a > p {
+  margin-top: 10px;
+  font-weight: 500;
+  font-size: 2rem;
+  color: var(--special-blue);
+}
